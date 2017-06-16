@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class"/>
+    <entity name="Filmsbase" representedClassName="Filmsbase" syncable="YES" codeGenerationType="class">
+        <attribute name="actors" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filmDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filmDirector" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filmId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filmImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="isLiked" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pictureName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="youtubeUrl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Iconsbase" representedClassName="Iconsbase" syncable="YES" codeGenerationType="class">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Personbase" representedClassName="Personbase" syncable="YES" codeGenerationType="class">
+        <attribute name="buildingNumer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flatNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streetName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Entity" positionX="-63" positionY="63" width="128" height="45"/>
+        <element name="Filmsbase" positionX="-63" positionY="-18" width="128" height="210"/>
+        <element name="Iconsbase" positionX="-63" positionY="63" width="128" height="60"/>
+        <element name="Personbase" positionX="-63" positionY="63" width="128" height="150"/>
+    </elements>
+</model>
