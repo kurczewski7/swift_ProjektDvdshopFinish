@@ -136,7 +136,7 @@ class Kantor  {
         self.euroKurs=(euro  > 1.0) ? euro  :  kursyWalut[2]
     }
     func setDateOfRate(date: String) {
-        self.dayOfCurrencyRate = (date == "") ? "": " ("+date+")"
+        self.dayOfCurrencyRate = (date == "") ? "": " (NBP "+date+")"
     }
 
 

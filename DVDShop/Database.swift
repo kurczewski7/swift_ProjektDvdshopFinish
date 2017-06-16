@@ -49,8 +49,9 @@ class Database {
         personRek.streetName="Mazowiecka"
         personRek.buildingNumer="12A"
         personRek.flatNumber=55
-        addOneRecordPerson(person: personRek)
         loadPersonData()
+        addOneRecordPerson(person: personRek)
+       
         
          fillLikeList()
     }
