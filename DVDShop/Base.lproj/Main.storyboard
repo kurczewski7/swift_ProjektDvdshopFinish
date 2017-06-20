@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GR9-tE-Suh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GR9-tE-Suh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -1052,6 +1052,7 @@
                             <constraint firstAttribute="trailing" secondItem="siP-EI-sFk" secondAttribute="trailing" id="dYG-Li-oOm"/>
                             <constraint firstItem="orf-dG-S8I" firstAttribute="leading" secondItem="ZEV-lk-4tQ" secondAttribute="leadingMargin" id="ht9-n9-GMn"/>
                             <constraint firstItem="siP-EI-sFk" firstAttribute="top" secondItem="4cL-Ss-86S" secondAttribute="bottom" constant="88" id="s8K-qJ-cqa"/>
+                            <constraint firstItem="pJz-nu-rQo" firstAttribute="top" secondItem="wqz-wD-RYJ" secondAttribute="bottom" constant="20" id="tKq-p8-AiM"/>
                             <constraint firstItem="wqz-wD-RYJ" firstAttribute="top" secondItem="0u6-U8-x3S" secondAttribute="bottom" constant="38" id="v9j-UD-uxr"/>
                             <constraint firstItem="wqz-wD-RYJ" firstAttribute="top" secondItem="siP-EI-sFk" secondAttribute="bottom" constant="60" id="yAL-Z3-gwL"/>
                         </constraints>
