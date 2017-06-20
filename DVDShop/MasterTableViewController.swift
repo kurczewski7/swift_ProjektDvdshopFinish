@@ -37,8 +37,16 @@ class MasterTableViewController: UITableViewController {
         tableView.reloadData()
         self.title="Filmy : \(database.flimsbaseFull.count)"
         print("----- MasterTableViewController ------")
+        
+        // wywołanie leniwej inicjalizacji
         kantor.totalPriceInZloty=database.totalPrice
         kantor.setTotalPriceTexeditAtrybute(totalPrice: totalPriceTextField)
+        
+        // wywołanie leniwej inicjalizacji
+        if server.dvds.count>0 {
+            let tekst: String = server.dvds[0].title
+            print("wywołanie leniwej inicjalizacji dla dvds -\(tekst)")
+        }
         
     }
 
