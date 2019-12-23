@@ -77,6 +77,7 @@ class BillViewController: UIViewController {
         haadHtml+="table#t01 tfoot {  color:blue; }"
         haadHtml+="</style>"
         haadHtml+="</head>"
+        
         haadHtml+="<body>"
         haadHtml+="<table id=\"t01\">"
         haadHtml+="<caption>Rachunek za filmy numer transakcji: <b>\(tranzactionNo)</b></caption>"
@@ -131,7 +132,7 @@ class BillViewController: UIViewController {
         adresatHtml+="</table>"
         adresatHtml+="</body>"
         adresatHtml+="</html>"
-        
+        print(haadHtml+bodyHtml+footerHtml+adresatHtml)
         return haadHtml+bodyHtml+footerHtml+adresatHtml
     }
 

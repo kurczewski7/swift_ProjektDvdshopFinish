@@ -84,8 +84,8 @@ class Database {
         print("rek.filmId:\(rek.filmId)")
         
         let image = rek.filmImage
-        let imgData = UIImageJPEGRepresentation(image, 1)
-        dbRow.filmImage=imgData! as NSData
+        let imgData = image.jpegData(compressionQuality: 1)
+        dbRow.filmImage=imgData! as NSData as Data
         saveDatabase()
     }
     

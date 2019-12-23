@@ -86,7 +86,7 @@ class MasterTableViewController: UITableViewController {
     }
     
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
@@ -133,7 +133,7 @@ class MasterTableViewController: UITableViewController {
         let phisicalRow = database.getPhisicalRow(row: indexPath.row)
         
          //Social Sharing Button
-         let shareAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Share", handler: { (action, indexPath) -> Void in
+        let shareAction = UITableViewRowAction(style: UITableViewRowAction.Style.default, title: "Share", handler: { (action, indexPath) -> Void in
                     let defaultText = "Polecany  \(setup.tytuly[indexPath.row])"
                     if let imageToShare = UIImage(named: setup.obrazki[indexPath.row]) {
                         let activityController = UIActivityViewController(activityItems: [defaultText, imageToShare], applicationActivities: nil)
@@ -142,7 +142,7 @@ class MasterTableViewController: UITableViewController {
                 })
         
         // Zaznacz button
-        let checkAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Zaznacz",handler: { (action, indexPath) -> Void in
+        let checkAction = UITableViewRowAction(style: UITableViewRowAction.Style.default, title: "Zaznacz",handler: { (action, indexPath) -> Void in
             currCell?.accessoryType = .checkmark
             currCell?.backgroundColor = UIColor.green
             database.setCheckRecord(phisicalRow: phisicalRow, value: true)
@@ -151,7 +151,7 @@ class MasterTableViewController: UITableViewController {
         })
         
         // Odznacz button
-        let unCheckAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Odznacz",handler: { (action, indexPath) -> Void in
+        let unCheckAction = UITableViewRowAction(style: UITableViewRowAction.Style.default, title: "Odznacz",handler: { (action, indexPath) -> Void in
             currCell?.accessoryType = .none
             currCell?.backgroundColor = UIColor.clear
             database.setCheckRecord(phisicalRow: phisicalRow, value: false)

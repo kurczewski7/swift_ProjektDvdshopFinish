@@ -66,7 +66,7 @@ class FavoritViewController: UIViewController, UICollectionViewDelegate,UICollec
         cell.titleLabel.text = dane.title
         cell.typeLabel.text = dane.type
         cell.priceLabel.text = kantor.doubleToString(dane.price)
-        cell.imageView.image = database.getUIImageFromDb(cuurrentPhoto: dane.filmImage!)
+        cell.imageView.image = database.getUIImageFromDb(cuurrentPhoto: dane.filmImage! as NSData)
         cell.isLiked=dane.isLiked
         cell.layer.cornerRadius=5.0
         cell.delegate = self

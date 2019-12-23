@@ -116,14 +116,14 @@ class FindTableViewController: UITableViewController {
         
         // Delete button
         // Delete the row from the data source
-        let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Delete",handler: { (action, indexPath) -> Void in
+        let deleteAction = UITableViewRowAction(style: UITableViewRowAction.Style.default, title: "Delete",handler: { (action, indexPath) -> Void in
                         self.database.filmsbaseFilter.remove(at: indexPath.row)
                         tableView.deleteRows(at: [indexPath], with: .fade)
                         self.title="Filmy znalezione: \(self.database.filmsbaseFilter.count)"
         })
         
         // Zaznacz button
-        let checkAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Zaznacz",handler: { (action, indexPath) -> Void in
+        let checkAction = UITableViewRowAction(style: UITableViewRowAction.Style.default, title: "Zaznacz",handler: { (action, indexPath) -> Void in
             currCell?.accessoryType = .checkmark
             currCell?.backgroundColor = UIColor.green
             self.database.setCheckRecord(phisicalRow: phisicalRow, value: true)
@@ -132,7 +132,7 @@ class FindTableViewController: UITableViewController {
         })
         
         // Odznacz button
-        let unCheckAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Odznacz",handler: { (action, indexPath) -> Void in
+        let unCheckAction = UITableViewRowAction(style: UITableViewRowAction.Style.default, title: "Odznacz",handler: { (action, indexPath) -> Void in
             currCell?.accessoryType = .none
             currCell?.backgroundColor = UIColor.clear
             self.database.setCheckRecord(phisicalRow: phisicalRow, value: false)

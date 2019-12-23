@@ -46,7 +46,7 @@ class PaymentCollectionViewController: UICollectionViewController {
                     trashEnabled=false
                     collectionView?.allowsMultipleSelection=false
                     trashButton.title = "Odznacz"
-                    trashButton.style=UIBarButtonItemStyle.plain
+                    trashButton.style=UIBarButtonItem.Style.plain
             
                     }
                 }
@@ -58,7 +58,7 @@ class PaymentCollectionViewController: UICollectionViewController {
             trashEnabled=true
             collectionView?.allowsMultipleSelection=true
             trashButton.title="Usuń"
-            trashButton.style=UIBarButtonItemStyle.done
+            trashButton.style=UIBarButtonItem.Style.done
         }
     }
  

@@ -208,7 +208,7 @@ class Server {
         } catch {
             data = nil
             if let img = UIImage(named: "placeholder.jpg"){
-                 data = UIImagePNGRepresentation(img)
+                data = img.pngData()
             }
         }
         return data
